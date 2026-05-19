@@ -6,7 +6,7 @@
 
 ## Portfolio Video
 
-[观看作品集解释视频](./assets/ai-portfolio-explainer.mp4)
+[观看作品集解释视频](./ai-portfolio-explainer.mp4)
 
 ## Focus
 
