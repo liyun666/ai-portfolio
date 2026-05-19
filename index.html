@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 解决方案作品集</title>
+    <style>
+      :root {
+        --paper: #fafaf8;
+        --ink: #0a0a0a;
+        --blue: #002fa7;
+        --muted: #5f5f5f;
+        --line: #d4d4d2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, "Helvetica Neue", Arial, "PingFang SC", sans-serif;
+      }
+
+      main {
+        width: min(1120px, calc(100vw - 40px));
+        margin: 0 auto;
+        padding: 72px 0;
+      }
+
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        color: var(--muted);
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 64px 0 18px;
+        font-size: clamp(48px, 9vw, 104px);
+        line-height: 0.98;
+        font-weight: 300;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin: 0 0 56px;
+        color: var(--muted);
+        font-size: 22px;
+        line-height: 1.55;
+      }
+
+      video {
+        width: 100%;
+        display: block;
+        background: #111;
+        border: 1px solid var(--line);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        margin-top: 52px;
+        background: var(--line);
+        border: 1px solid var(--line);
+      }
+
+      .cell {
+        min-height: 132px;
+        padding: 24px;
+        background: var(--paper);
+      }
+
+      .cell strong {
+        display: block;
+        margin-bottom: 14px;
+        color: var(--blue);
+        font-size: 13px;
+        letter-spacing: 0.16em;
+      }
+
+      .cell span {
+        font-size: 20px;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          padding: 42px 0;
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="meta">
+        <span>AI Solution Portfolio</span>
+        <span>ToB AI Delivery</span>
+      </div>
+      <h1>AI 解决方案作品集</h1>
+      <p class="subtitle">
+        产品思维 + 业务思维驱动的 ToB AI 落地实践。将企业真实业务问题转化为可使用、可验证、可交付的 AI 工作流与系统方案。
+      </p>
+      <video controls playsinline src="./assets/ai-portfolio-explainer.mp4"></video>
+      <section class="grid" aria-label="核心方向">
+        <div class="cell"><strong>01</strong><span>ToB AI 方案落地</span></div>
+        <div class="cell"><strong>02</strong><span>AI 带货短视频批量生成</span></div>
+        <div class="cell"><strong>03</strong><span>爆款视频结构复刻</span></div>
+        <div class="cell"><strong>04</strong><span>跨境电商内容生产</span></div>
+      </section>
+    </main>
+  </body>
+</html>
